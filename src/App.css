@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.composer-container {
+  border: 3px solid lightgray;
+  border-radius: 24px;
+  padding: 1rem;
+  max-width: 943px;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.composer-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+.comment-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.date {
+  color: gray;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.composer-content {
+  display: flex;
+  margin: 20px 0;
+}
+
+.mention {
+  color: rgb(0, 115, 255);
+  margin: 5px;
+}
+
+.reply {
+  border-radius: 15px;
+  height: 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: lightyellow;
+  padding: 8px;
+  color: #a08963;
 }
 
-.App-link {
-  color: #61dafb;
+.reply-input {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reply-input input {
+  border: none;
+  outline: none;
+  width: 70%;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.call-icon-container {
+  display: flex;
+}
+
+.message-container {
+  background-color: rgb(247, 247, 247);
+  border-radius: 15px;
+  padding: 1rem;
+  margin-right: 20px;
+}
+
+.call-icon {
+  background-color: rgb(255, 77, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+input[type=range] {
+	height: 5px;
+	-webkit-appearance: none;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background: #3b7677;
+	transition: background 0.2s ease;
+	cursor: pointer;
 }
