@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Image } from 'react-bootstrap';
 import { FiPhoneMissed } from "react-icons/fi";
 import AudioPlayer from './AudioPlayer';
