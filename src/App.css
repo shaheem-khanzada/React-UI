@@ -2,13 +2,19 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.composer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 30px;
+}
+
 .composer-container {
-  border: 3px solid lightgray;
+  border: 3px solid rgb(243 243 243);
   border-radius: 24px;
   padding: 1rem;
-  max-width: 943px;
-  margin-left: 40px;
-  margin-top: 10px;
+  width: 80%;
 }
 
 .composer-header {
@@ -30,7 +36,9 @@ body {
 
 .composer-content {
   display: flex;
+  align-items: flex-end;
   margin: 20px 0;
+  margin-bottom: 5px;
 }
 
 .mention {
@@ -40,17 +48,18 @@ body {
 
 .reply {
   border-radius: 15px;
-  height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: lightyellow;
+  background-color: #fbf9ec;
   padding: 8px;
-  color: #a08963;
+  color: #857254;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .reply-input {
-  border: 1px solid;
+  border: 3px solid rgb(243 243 243);
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -60,7 +69,12 @@ body {
 .reply-input input {
   border: none;
   outline: none;
-  width: 70%;
+  width: 100%;
+}
+
+.reply-input .reply-icons {
+  display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -72,10 +86,10 @@ body {
 }
 
 .message-container {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(243 243 243);
   border-radius: 15px;
   padding: 1rem;
-  margin-right: 20px;
+  width: 80%;
 }
 
 .call-icon {
@@ -89,13 +103,81 @@ body {
   margin-right: 10px;
 }
 
-input[type=range] {
-	height: 5px;
-	-webkit-appearance: none;
-	width: 100%;
-	margin-bottom: 10px;
-	border-radius: 8px;
-	background: #3b7677;
-	transition: background 0.2s ease;
-	cursor: pointer;
+.like-icon {
+  margin-left: 55px;
+  margin-bottom: 15px;
+  background-color: #f3f5f4;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50px;
+  width: 40px;
+  margin-top: -10px;
+}
+.like-icon img {
+  width: 15px;
+  margin-right: 5px;
+}
+.like-icon p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+}
+
+input[type="range"] {
+  height: 5px;
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 8px;
+  background: #3b7677;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.audio-player {
+  background: #e9e8ed;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.audio-player button {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding-left: 0;
+  margin-right: 3px;
+}
+
+.audio-player .audioTimer {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+.audio-player .soundContainer {
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+}
+
+.audio-player .soundIcon {
+  margin: 0 5px;
+}
+
+.audio-player .audioDots {
+  margin: 0 5px;
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff; /* Change this to your desired color */
+  cursor: pointer;
 }
