@@ -5,16 +5,27 @@ body {
 .composer {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   padding: 5px 30px;
+}
+
+.composer .curveEdge {
+  width: 20px;
+  height: 30px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-left: 3px solid rgb(243 243 243);
+  border-bottom: 3px solid rgb(243 243 243);
+  margin-left: 55px;
+  margin-top: -10px;
+  margin-right: 10px;
 }
 
 .composer-container {
   border: 3px solid rgb(243 243 243);
   border-radius: 24px;
   padding: 1rem;
-  width: 80%;
+  width: 100%;
 }
 
 .composer-header {
@@ -89,7 +100,7 @@ body {
   background-color: rgb(243 243 243);
   border-radius: 15px;
   padding: 1rem;
-  width: 80%;
+  width: 100%;
 }
 
 .call-icon {

@@ -11,6 +11,7 @@ const imageURL =
 const ComposerInput = React.memo(() => {
   return (
     <div className="composer">
+      <div className="curveEdge"></div>
       <div className="composer-container">
         <div className="composer-header">
           <div className="header-left">

@@ -8,7 +8,7 @@ const imageURL =
 
 const MessageItem = React.memo(() => {
   return (
-    <div style={{ display: "flex", alignItems: "end", padding: "5px 30px" }}>
+    <div style={{ display: "flex", alignItems: "end", padding: "5px 60px 5px 30px" }}>
       <Image
         style={{ width: 45, height: 45, marginRight: 10 }}
         src={imageURL}
